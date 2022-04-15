@@ -1,0 +1,193 @@
+.ordering {
+
+    &__container {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__left-list {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    &__left-link {
+        display: flex;
+        text-decoration: none;
+    }
+
+    &__left-link:hover {
+        opacity: 0.8;
+    }
+
+    &__left-link:active {
+        opacity: 0.4;
+    }
+
+    &__left-desc {
+        margin: 0;
+        margin-right: 28px;
+        font-family: 'Fraunces';
+        font-weight: 900;
+        font-size: 24px;
+        line-height: 32px;
+        color: #9ECDC9;
+    }
+
+    &__left-desc-active {
+        color: #B5B7B9;
+    }
+
+    &__left-desc-black {
+        color: #333D4B;
+    }
+
+    &__left-desc-title {
+        margin: 0;
+        font-family: 'Fraunces';
+        font-weight: 900;
+        font-size: 24px;
+        line-height: 32px;
+        color: #adb0b2;
+    }
+
+    &__left-desc-title-active {
+        color:#333D4B;
+    }
+
+    &__left-line {
+        display: block;
+        width: 251px;
+        margin-bottom: 24px;
+        height: 1px;
+        background: #83888F;
+        mix-blend-mode: normal;
+        opacity: 0.25;
+    }
+
+    &__form {
+        padding-bottom: 168px;
+        margin-left: 125px;
+    }
+
+    &__drink {
+        margin-bottom: 88px;
+    }
+
+    &__drink-heading {
+        margin: 0;
+        margin-bottom: 56px;
+        font-family: 'Fraunces';
+        font-weight: 900;
+        font-size: 40px;
+        line-height: 48px;
+        color: #83888F;
+    }
+
+    &__drink-heading::after {
+        content: "";
+        display: inline-block;
+        width: 19px;
+        height: 12px;
+        background-image: url(../images/strelka.png);
+    }
+
+    &__wrapper {
+        display: flex;
+    }
+
+    &__label + &__label {
+        margin-left: 23px;
+    }
+
+    &__input-title {
+        padding-top: 32px;
+        padding-right: 28px;
+        padding-bottom: 84px;
+        padding-left: 28px;
+        width: 228px;
+        background: #F4F1EB;
+        border-radius: 8px;
+        transition: all 0.4s;
+    }
+
+    &__input-title-desc {
+        margin: 0;
+        margin-bottom: 24px;
+        font-family: 'Fraunces';
+        font-weight: 900;
+        font-size: 24px;
+        line-height: 32px;
+        color: #333D4B;
+    }
+
+    &__input-title-desc-small {
+        margin: 0;
+        line-height: 26px;
+        color: #333D4B;
+    }
+
+    &__input-title:hover {
+        background-color: #0E8784;
+        color: white;
+    }
+
+    &__input:checked + &__input-title {
+        background: #FDD6BA;
+        color: black;
+    }
+
+    &__summary {
+        margin-bottom: 40px;
+        background-color: #272E37;
+        padding: 24px 64px;
+        border-radius: 8px;
+    }
+
+    &__summary-desc {
+        margin: 0;
+        margin-bottom: 8px;
+        line-height: 26px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        mix-blend-mode: normal;
+        opacity: 0.5;
+    }
+
+    &__summary-desc-big {
+        width: 602px;
+        margin: 0;
+        font-family: 'Fraunces';
+        font-weight: 900;
+        font-size: 24px;
+        line-height: 40px;
+        color: #FFFFFF;
+    }
+
+    &__summary-span {
+        color: #0E8784;
+    }
+
+    &__summary-btn {
+        width: 217px;
+        padding: 15px 35px;
+        background: #66D2CF;
+        border: 2px solid transparent;
+        border-radius: 6px;
+        font-family: 'Fraunces ';
+        font-weight: 900;
+        font-size: 18px;
+        line-height: 25px;
+        text-align: end;
+        color: #FEFCF7;
+        margin-left: 510px;
+    }
+
+    &__summary-btn:hover {
+        opacity: 0.8;
+    }
+
+    &__summary-btn:active {
+        opacity: 0.4;
+    }
+}
