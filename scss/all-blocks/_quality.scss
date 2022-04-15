@@ -1,33 +1,39 @@
-.commitment {
-
-    padding-bottom: 356px;
+.quality {
 
     &__container {
         display: flex;
         align-items: center;
-        justify-content: center;
+        background-color: #282F38;
+        border-radius: 8px;
+        padding-bottom: 88px;
+        padding-left: 85px;
     }
 
     &__wrapper {
-        margin-left: 125px;
         width: 540px;
+        margin-right: 125px;
     }
 
     &__heading {
         margin: 0;
+        margin-bottom: 32px;
         font-family: 'Fraunces';
-        font-style: normal;
         font-weight: 900;
         font-size: 40px;
         line-height: 48px;
-        color: #333D4B;
+        color: #FEFCF7;
     }
 
     &__desc {
         margin: 0;
         line-height: 26px;
-        color: #333D4B;
+        color: #FEFCF7;
         mix-blend-mode: normal;
         opacity: 0.8;
+    }
+
+    &__img {
+        position: relative;
+        top: -88px;
     }
 }
