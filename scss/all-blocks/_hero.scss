@@ -1,0 +1,37 @@
+.hero {
+    // padding-bottom: 136px;
+
+    &__container {
+        background-image: url(../images/Bitmap.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        padding-top: 116px;
+        padding-bottom: 116px;
+        padding-left: 86px;
+    }
+
+    &__wrapper {
+        width: 493px;
+    }
+
+    &__heading {
+        font-family: 'Fraunces';
+        margin: 0;
+        margin-bottom: 32px;
+        font-weight: 900;
+        font-size: 72px;
+        line-height: 72px;
+        color: #FEFCF7;
+
+    }
+
+    &__desc {
+        margin: 0;
+        margin-bottom: 56px;
+        font-size: 16px;
+        line-height: 26px;
+        color: #FEFCF7;
+        mix-blend-mode: normal;
+        opacity: 0.8;
+    }
+}
