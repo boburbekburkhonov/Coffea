@@ -1,0 +1,29 @@
+.about {
+
+    padding-bottom: 168px;
+
+    &__container {
+        background-image: url(../images/blackcofe.png);
+        background-size: cover;
+        padding: 137px 85px;
+    }
+
+    &__heading {
+        margin: 0;
+        margin-bottom: 24px;
+        font-family: 'Fraunces';
+        font-style: normal;
+        font-weight: 900;
+        font-size: 40px;
+        line-height: 48px;
+        color: #FEFCF7;
+    }
+
+    &__desc {
+        width: 445px;
+        margin: 0;
+        font-size: 16px;
+        line-height: 26px;
+        color: #FEFCF7;
+    }
+}

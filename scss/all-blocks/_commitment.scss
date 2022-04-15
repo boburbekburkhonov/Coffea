@@ -1,0 +1,33 @@
+.commitment {
+
+    padding-bottom: 256px;
+
+    &__container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__wrapper {
+        margin-left: 125px;
+        width: 540px;
+    }
+
+    &__heading {
+        margin: 0;
+        font-family: 'Fraunces';
+        font-style: normal;
+        font-weight: 900;
+        font-size: 40px;
+        line-height: 48px;
+        color: #333D4B;
+    }
+
+    &__desc {
+        margin: 0;
+        line-height: 26px;
+        color: #333D4B;
+        mix-blend-mode: normal;
+        opacity: 0.8;
+    }
+}

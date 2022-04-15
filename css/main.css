@@ -155,10 +155,6 @@ img {
   color: #83888F;
 }
 
-.sitenav__link--about {
-  color: #333D4B;
-}
-
 .sitenav__link:hover {
   opacity: 0.8;
 }
@@ -169,8 +165,7 @@ img {
 
 .hero__container {
   background-image: url(../images/Bitmap.png);
-  background-size: contain;
-  background-repeat: no-repeat;
+  background-size: cover;
   padding-top: 116px;
   padding-bottom: 116px;
   padding-left: 86px;
@@ -474,5 +469,73 @@ img {
 
 .footer__img-link:active {
   opacity: 0.4;
+}
+
+.about {
+  padding-bottom: 168px;
+}
+
+.about__container {
+  background-image: url(../images/blackcofe.png);
+  background-size: cover;
+  padding: 137px 85px;
+}
+
+.about__heading {
+  margin: 0;
+  margin-bottom: 24px;
+  font-family: 'Fraunces';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 48px;
+  color: #FEFCF7;
+}
+
+.about__desc {
+  width: 445px;
+  margin: 0;
+  font-size: 16px;
+  line-height: 26px;
+  color: #FEFCF7;
+}
+
+.commitment {
+  padding-bottom: 256px;
+}
+
+.commitment__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.commitment__wrapper {
+  margin-left: 125px;
+  width: 540px;
+}
+
+.commitment__heading {
+  margin: 0;
+  font-family: 'Fraunces';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 48px;
+  color: #333D4B;
+}
+
+.commitment__desc {
+  margin: 0;
+  line-height: 26px;
+  color: #333D4B;
+  mix-blend-mode: normal;
+  opacity: 0.8;
 }
 /*# sourceMappingURL=main.css.map */
