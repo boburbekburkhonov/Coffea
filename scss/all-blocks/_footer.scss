@@ -45,6 +45,9 @@
         opacity: 0.4;
     }
 
+    &__img-link {
+        text-decoration: none;
+    }
 
     &__img-link + &__img-link {
         margin-left: 24px;
