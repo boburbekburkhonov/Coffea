@@ -1,17 +1,15 @@
 .choose {
-
     padding-bottom: 351px;
 
     &__container {
         padding-top: 100px;
-        // padding-bottom: 317px;
         background-color: #282F38;
     }
 
     &__heading {
         margin: 0;
         margin-bottom: 32px;
-        font-family: 'Fraunces 9pt';
+        font-family: 'Fraunces';
         font-style: normal;
         font-weight: 900;
         font-size: 40px;
@@ -79,4 +77,87 @@
         line-height: 26px;
         color: #FEFCF7;
     }
+}
+
+@media only screen and (max-width:768px) {
+
+    .choose {
+
+        &__container {
+            padding-top: 56px;
+        }
+
+        &__heading {
+            margin-bottom: 24px;
+            font-size: 32px;
+            line-height: 48px;
+            text-align: center;
+            color: #FEFCF7;
+        }
+
+        &__desc {
+            width: 540px;
+            // margin-bottom: 70px;
+            font-size: 15px;
+            line-height: 25px;
+            text-align: center;
+            color: #FEFCF7;
+            mix-blend-mode: normal;
+            opacity: 0.8;
+        }
+
+
+        &__list {
+            margin-left: 350px;
+            flex-direction: column;
+        }
+
+        &__item {
+            top: 70px;
+            display: flex;
+            justify-content: space-between;
+            width: 573px;
+        }
+
+        &__item + &__item {
+            margin-left: 0;
+            margin-top: 24px;
+        }
+
+    }
+
+}
+
+@media only screen and (max-width:375px) {
+
+    .choose {
+
+        &__heading {
+            font-size: 28px;
+            line-height: 28px;
+            text-align: center;
+            color: #FEFCF7;
+        }
+
+        &__desc {
+            font-size: 15px;
+            line-height: 25px;
+            text-align: center;
+            color: #FEFCF7;
+            mix-blend-mode: normal;
+            opacity: 0.8;
+        }
+
+        &__list {
+            margin-left: 500px;
+        }
+
+        &__item {
+            width: 279px;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+    }
+
 }

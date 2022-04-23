@@ -8,7 +8,6 @@
         background-image: url(../images/our.png);
         background-repeat: no-repeat;
         background-size: contain;
-        // background-position: top -120px center;
     }
 
     &__img {
@@ -45,4 +44,69 @@
         text-align: center;
         color: #333D4B;
     }
+}
+
+@media only screen and (max-width:768px) {
+
+    .collection {
+        padding-bottom: 144px;
+
+        &__list {
+            padding-left: 100px;
+            flex-direction: column;
+        }
+
+        &__item {
+            display: flex;
+        }
+
+        &__desc {
+            font-size: 24px;
+            line-height: 32px;
+            color: #333D4B;
+        }
+
+        &__desc-small {
+            font-size: 15px;
+            line-height: 25px;
+            color: #333D4B;
+        }
+
+    }
+
+}
+
+@media only screen and (max-width:375px) {
+
+    .collection {
+        padding-bottom: 120px;
+
+        &__list {
+            flex-direction: column;
+        }
+
+        &__item {
+            display: block;
+        }
+
+        &__item + &__item {
+            margin-top: 40px;
+        }
+
+        &__desc {
+            font-size: 24px;
+            line-height: 32px;
+            text-align: center;
+            color: #333D4B;
+        }
+
+        &__desc-small {
+            font-size: 15px;
+            line-height: 25px;
+            text-align: center;
+            color: #333D4B;
+        }
+
+    }
+
 }

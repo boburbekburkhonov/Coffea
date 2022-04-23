@@ -1,5 +1,4 @@
 .footer {
-
     padding-bottom: 135px;
 
     &__container {
@@ -60,4 +59,52 @@
     &__img-link:active {
         opacity: 0.4;
     }
+}
+
+@media only screen and (max-width:768px) {
+
+    .footer {
+        padding-bottom: 72px;
+
+        &__container {
+            flex-direction: column;
+        }
+
+        &__wrapper {
+            flex-direction: column;
+        }
+
+        &__logo {
+            margin-bottom: 32px;
+        }
+
+        &__list {
+            margin-bottom: 65px;
+            margin-left: -20px;
+        }
+
+    }
+
+}
+
+@media only screen and (max-width:375px) {
+
+    .footer {
+        padding-bottom: 72px;
+
+        &__list {
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        &__item + &__item {
+            margin-left: 0px;
+        }
+
+        &__item + &__item {
+            margin-top: 24px;
+        }
+
+    }
+
 }

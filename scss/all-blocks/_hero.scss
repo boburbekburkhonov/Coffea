@@ -1,16 +1,16 @@
 .hero {
-    // padding-bottom: 136px;
+    padding-bottom: 136px;
 
     &__container {
         background-image: url(../images/Bitmap.png);
         background-size: cover;
-        padding-top: 116px;
-        padding-bottom: 116px;
-        padding-left: 86px;
+        background-repeat: no-repeat;
+        background-position: center;
+        padding: 116px 85px;
     }
 
     &__wrapper {
-        width: 493px;
+        max-width: 493px;
     }
 
     &__heading {
@@ -33,4 +33,105 @@
         mix-blend-mode: normal;
         opacity: 0.8;
     }
+}
+
+@media only screen and (max-width: 768px) {
+
+    .hero {
+        padding-bottom: 144px;
+
+        &__container {
+            padding: 104px 58px;
+            background-image: url(../../images/herotablet.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        &__heading {
+            margin-bottom: 24px;
+            font-size: 48px;
+            line-height: 48px;
+        }
+
+        &__desc {
+            margin-bottom: 40px;
+            font-size: 15px;
+            line-height: 25px;
+        }
+
+    }
+
+}
+
+@media only screen and (max-width:564px) {
+
+    .hero {
+
+        &__container {
+            padding: 100px 0;
+            background-image: url(../../images/heromobile.png);
+            background-size: cover;
+            background-position: center;
+            border-radius: 5px;
+        }
+
+        &__wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &__heading {
+            max-width: 400px;
+            // font-size: 40px;
+            // line-height: 40px;
+            text-align: center;
+        }
+
+        &__desc {
+            max-width: 450px;
+            // font-size: 15px;
+            // line-height: 25px;
+            text-align: center;
+        }
+
+    }
+
+}
+
+@media only screen and (max-width:375px) {
+
+    .hero {
+        padding-bottom: 120px;
+
+        &__container {
+            padding: 100px 0;
+            background-image: url(../../images/heromobile.png);
+            background-size: cover;
+            background-position: center;
+            border-radius: 5px;
+        }
+
+        &__wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &__heading {
+            max-width: 279px;
+            font-size: 40px;
+            line-height: 40px;
+            text-align: center;
+        }
+
+        &__desc {
+            max-width: 279px;
+            font-size: 15px;
+            line-height: 25px;
+            text-align: center;
+        }
+
+    }
+
 }
