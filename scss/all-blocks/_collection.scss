@@ -46,13 +46,42 @@
     }
 }
 
+@media only screen and (max-width:1058px) {
+
+    .collection {
+
+        padding-bottom: 114px;
+
+        &__list {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &__item {
+            display: flex;
+        }
+
+        // &__desc {
+        //     font-size: 24px;
+        //     line-height: 32px;
+        // }
+
+        // &__desc-small {
+        //     font-size: 15px;
+        //     line-height: 25px;
+
+        // }
+
+    }
+
+}
+
 @media only screen and (max-width:768px) {
 
     .collection {
-        padding-bottom: 144px;
+        padding-bottom: 114px;
 
         &__list {
-            padding-left: 100px;
             flex-direction: column;
         }
 
@@ -63,50 +92,49 @@
         &__desc {
             font-size: 24px;
             line-height: 32px;
-            color: #333D4B;
         }
 
         &__desc-small {
             font-size: 15px;
             line-height: 25px;
-            color: #333D4B;
+
         }
 
     }
 
 }
 
-@media only screen and (max-width:375px) {
+// @media only screen and (max-width:375px) {
 
-    .collection {
-        padding-bottom: 120px;
+//     .collection {
+//         padding-bottom: 120px;
 
-        &__list {
-            flex-direction: column;
-        }
+//         &__list {
+//             flex-direction: column;
+//         }
 
-        &__item {
-            display: block;
-        }
+//         &__item {
+//             display: block;
+//         }
 
-        &__item + &__item {
-            margin-top: 40px;
-        }
+//         &__item + &__item {
+//             margin-top: 40px;
+//         }
 
-        &__desc {
-            font-size: 24px;
-            line-height: 32px;
-            text-align: center;
-            color: #333D4B;
-        }
+//         &__desc {
+//             font-size: 24px;
+//             line-height: 32px;
+//             text-align: center;
+//             color: #333D4B;
+//         }
 
-        &__desc-small {
-            font-size: 15px;
-            line-height: 25px;
-            text-align: center;
-            color: #333D4B;
-        }
+//         &__desc-small {
+//             font-size: 15px;
+//             line-height: 25px;
+//             text-align: center;
+//             color: #333D4B;
+//         }
 
-    }
+//     }
 
-}
+// }

@@ -38,7 +38,7 @@
 @media only screen and (max-width: 768px) {
 
     .hero {
-        padding-bottom: 144px;
+        padding-bottom: 114px;
 
         &__container {
             padding: 104px 58px;
@@ -83,15 +83,11 @@
 
         &__heading {
             max-width: 400px;
-            // font-size: 40px;
-            // line-height: 40px;
             text-align: center;
         }
 
         &__desc {
             max-width: 450px;
-            // font-size: 15px;
-            // line-height: 25px;
             text-align: center;
         }
 
