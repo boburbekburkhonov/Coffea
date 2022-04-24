@@ -57,7 +57,8 @@
 
     &__left-line {
         display: block;
-        width: 251px;
+        max-width: 251px;
+        width: 100%;
         margin-bottom: 24px;
         height: 1px;
         background: #83888F;
@@ -105,7 +106,8 @@
         padding-right: 28px;
         padding-bottom: 84px;
         padding-left: 28px;
-        width: 228px;
+        max-width: 228px;
+        width: 100%;
         background: #F4F1EB;
         border-radius: 8px;
         transition: all 0.4s;
@@ -124,6 +126,7 @@
     &__input-title-desc-small {
         margin: 0;
         line-height: 26px;
+        font-size: 16px;
         color: #333D4B;
     }
 
@@ -162,7 +165,8 @@
     }
 
     &__summary-desc-big {
-        width: 602px;
+        max-width: 602px;
+        width: 100%;
         margin: 0;
         font-family: 'Fraunces';
         font-weight: 900;
@@ -197,4 +201,63 @@
     &__summary-btn:active {
         opacity: 0.4;
     }
+}
+
+@media only screen and (max-width: 1116px) {
+
+    .ordering {
+
+        &__left-list {
+            display: none;
+        }
+
+        &__form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-left: 0;
+        }
+
+        &__drink-heading {
+            // max-width: 689px;
+            width: 100%;
+        }
+
+        &__summary-btn {
+            margin-left: 0;
+        }
+
+        &__input-title {
+            max-width: 223px;
+            max-height: 300px;
+        }
+
+    }
+
+}
+
+@media only screen and (max-width: 635px) {
+
+    .ordering {
+
+        &__container {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &__wrapper {
+            flex-direction: column;
+        }
+
+        &__label + &__label {
+            margin-left: 0px;
+        }
+
+        &__input-title {
+            max-width: 500px;
+            width: 100%;
+        }
+
+    }
+
 }
