@@ -418,6 +418,26 @@ img {
   overflow: hidden;
 }
 
+.about__none {
+  display: none;
+}
+
+.commitment__none {
+  display: none;
+}
+
+.quality__none {
+  display: none;
+}
+
+.nation__none {
+  display: none;
+}
+
+.footer__none {
+  display: none;
+}
+
 .container {
   width: 100%;
   max-width: 1320px;

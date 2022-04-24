@@ -5,16 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./images/last.jpg" type="image/x-icon">
-    <!-- <link rel="stylesheet" href="./css/main.css"> -->
-    <link rel="stylesheet" href="./css/main.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <!-- <link rel="stylesheet" href="./css/main.min.css"> -->
     <title>About us</title>
 </head>
 <body>
     <!-- HEADER -->
-    <header class="header">
+    <header class="header header--open">
         <div class="container header__container">
             <a class="header__link" href="#">
                 <img class="header__img" src="./images/Group 5.svg" alt="logo" width="236" height="26">
+            </a>
+
+            <a class="header__link header__link--active" href="#">
+                <img class="header__img" src="./images/footerlogo.png" alt="logo" width="163" height="18">
             </a>
             <!-- NAV -->
             <nav class="sitenav">
@@ -37,6 +41,8 @@
                         </a>
                     </li>
                 </ul>
+
+                <button class="header__hamburger"></button>
             </nav>
         </div>
     </header>
@@ -44,7 +50,7 @@
     <!-- MAIN -->
     <main class="main">
         <!-- ABOUT -->
-        <section class="about">
+        <section class="about about__none">
             <div class="container about__container">
                 <h2 class="about__heading">About Us</h2>
                 <p class="about__desc">
@@ -54,7 +60,7 @@
         </section>
 
         <!-- COMMITMENT -->
-        <section class="commitment">
+        <section class="commitment commitment__none">
             <div class="container commitment__container">
                 <img class="commitment__img" src="./images/man.png" alt="man" width="445" height="520">
 
@@ -67,7 +73,7 @@
             </div>
         </section>
         <!-- QUALITY -->
-        <section class="quality">
+        <section class="quality quality__none">
             <div class="container quality__container">
                 <div class="quality__wrapper">
                     <h2 class="quality__heading">Uncompromising quality</h2>
@@ -79,8 +85,8 @@
                 <img class="quality__img" src="./images/qualitycofe.png" alt="cofe" width="445" height="474">
             </div>
         </section>
-
-        <section class="nation">
+        <!-- NATION -->
+        <section class="nation nation__none">
             <div class="container nation__container">
                 <p class="nation__desc">Our headquarters</p>
 
@@ -125,7 +131,7 @@
     </main>
 
     <!-- FOOTER -->
-    <footer class="footer">
+    <footer class="footer footer__none">
         <div class="container footer__container">
           <div class="footer__wrapper">
             <a class="header__link" href="#">
@@ -162,5 +168,7 @@
           </div>
         </div>
     </footer>
+
+    <script src="./js/app.js"></script>
 </body>
 </html>
