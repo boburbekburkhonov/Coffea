@@ -15,14 +15,14 @@
 
     &__list {
         display: flex;
-        align-items: center;
         list-style: none;
         margin: 0;
         padding: 0;
     }
 
     &__item {
-        width: 285px;
+        max-width: 285px;
+        width: 100%;
     }
 
     &__item + &__item {
@@ -49,4 +49,90 @@
         line-height: 26px;
         color: #333D4B;
     }
+}
+
+@media only screen and (max-width: 1000px) {
+
+    .nation {
+        padding-bottom: 144px;
+        padding-left: 40px;
+
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+
+    .nation {
+        padding-bottom: 144px;
+
+        &__list-desc {
+            margin-bottom: 21px;
+            max-width: 223px;
+            width: 100%;
+            font-size: 24px;
+            line-height: 36px;
+        }
+
+        &__list-desc-small {
+            max-width: 223px;
+            width: 100%;
+            font-size: 16px;
+            line-height: 26px;
+        }
+
+    }
+
+}
+
+@media only screen and (max-width: 564px) {
+
+    .nation {
+        padding-bottom: 120px;
+
+        &__container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &__list {
+            flex-direction: column;
+            align-items: center;
+
+            &-desc {
+                text-align: center;
+            }
+
+            &-desc-small {
+                max-width: 327px;
+                width: 100%;
+            }
+        }
+
+        &__item + &__item {
+            margin-left: 0px;
+            margin-top: 80px;
+        }
+
+        &__img {
+            margin-left: 80px;
+        }
+
+    }
+
+}
+
+@media only screen and (max-width: 375px) {
+
+    .nation {
+        padding-bottom: 120px;
+
+        &__item {
+            max-width: 327px;
+            width: 100%;
+        }
+
+    }
+
 }
