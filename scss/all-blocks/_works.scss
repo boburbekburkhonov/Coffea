@@ -71,15 +71,27 @@
     }
 }
 
-@media only screen and (max-width:768px) {
+@media only screen and (max-width:1116px) {
 
     .works {
+        padding-top: 144px;
+        padding-bottom: 144px;
         padding-left: 40px;
 
-        &__desc {
+        &__desc-start {
             margin-bottom: 40px;
             font-size: 24px;
             line-height: 32px;
+            color: #83888F;
+        }
+
+        &__img {
+            display: none;
+        }
+
+        &__img-tablet {
+            display: inline-block;
+            margin-bottom: 48px;
         }
 
         &__span {
@@ -88,13 +100,23 @@
             line-height: 72px;
         }
 
+        &__desc {
+            max-width: 223px;
+            width: 100%;
+            font-size: 28px;
+            line-height: 32px;
+        }
+
         &__desc-small {
+            max-width: 223px;
+            width: 100%;
             font-size: 15px;
             line-height: 25px;
         }
 
         &__item {
-            width: 223px;
+            max-width: 223px;
+            width: 100%;
         }
 
         &__item +  &__item {
@@ -105,19 +127,50 @@
 
 }
 
-@media only screen and (max-width:375px) {
+@media only screen and (max-width:564px) {
 
     .works {
+        padding-top: 480px;
         padding-bottom: 120px;
 
-        &__desc {
-            margin-bottom: 80px;
-            text-align: center;
+        &__container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &__desc-start {
             font-size: 24px;
             line-height: 32px;
         }
 
+        &__span {
+            margin-bottom: 24px;
+            font-size: 72px;
+            line-height: 72px;
+        }
+
+        &__desc {
+            max-width: 327px;
+            width: 100%;
+            margin-bottom: 24px;
+            font-size: 24px;
+            line-height: 32px;
+        }
+
+
+        &__desc-small {
+            max-width: 327px;
+            width: 100%;
+            font-size: 15px;
+            line-height: 25px;
+        }
+
         &__img {
+            display: none;
+        }
+
+        &__img-tablet {
             display: none;
         }
 
@@ -126,25 +179,13 @@
         }
 
         &__item {
-            width: 327px;
-        }
-
-        &__span {
-            padding-left: 100px;
-            margin-bottom: 24px;
-            font-size: 72px;
-            line-height: 72px;
-            text-align: center;
-        }
-
-        &__desc-small {
-            margin-top: -24px;
-            font-size: 15px;
-            line-height: 25px;
+            max-width: 327px;
+            width: 100%;
         }
 
         &__button {
-            margin-left: 500px;
+            max-width: 217px;
+            width: 100%;
         }
 
     }
